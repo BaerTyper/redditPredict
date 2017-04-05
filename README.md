@@ -1,4 +1,15 @@
 # redditPredict
-A Python Reddit script to use group intelligence (as in harvest data from Reddit and then apply it) to find subreddits a user may like. 
+A Python Reddit script to use group intelligence to find subreddits a user may like. Works by selecting users that have commented on the front page, saving all subreddits that those users have commented in and then when given a user as input looks for users that have those subreddits in their lists. So it's based on the theory that users will like things users with similar interests like. As the project grows I'll make sure to add data reduction to make the whole subreddit search more specific and accurate. 
 
-Not done but I try my best working on it.
+What it does so far:
+- Log into Reddit through its API
+- Look for the logged in User's Subreddits
+- Save them to a Comma Separated File called data.csv
+
+For the future:
+- Look for users on the front page automatically
+- Make sure to not include the same user twice by keeping and checking a seperate file of just usernames
+- Save Subreddit lists of users automatically
+- Actually accept user input and look for subreddits the user may like
+
+Still have lots of work to do on this, and sadly not a lot of time. But I enjoy doing it. And I really want to see how well it works in the end. 
