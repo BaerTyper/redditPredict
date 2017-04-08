@@ -5,10 +5,11 @@ What it does so far:
 - Log into Reddit through its API
 - Look for the logged in User's Subreddits
 - Save them to a Comma Separated File called data.csv
+- Save all usernames of scanned Reddit accounts to a CSV file called users.csv
+- Check if Reddit account has been checked already before doing anything with it
 
 For the future:
 - Look for users on the front page automatically
-- Make sure to not include the same user twice by keeping and checking a seperate file of just usernames
 - Save Subreddit lists of users automatically
 - Actually accept user input and look for subreddits the user may like
 
