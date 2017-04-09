@@ -8,19 +8,20 @@ secret = ""
 agent = ""
 
 def checkRedditor(username):
-	userlist = []
-	with open("users.txt", "r") as stream:
-		reader = csv.reader(stream)
-		for entry in reader:
-			userlist.append(entry)
-	if (username in userlist):
-		print("Redditor already added to database.")
-	else:
-		with open("users.txt", "w") as saver:
-			writer = csv.writer(saver)
-			writer.writerow(userlist)
-		saveReddits(username)	
-
+	try:
+		userlist = pickle.load(open("users.p", "rb"))
+		print(userlist)
+		if (username in userlist):
+			print("Don't do it.")
+		else:
+			print("Adding...")
+			userlist.append(username)
+			pickle.dump(userlist, open("users.p", "wb"))
+			#saveReddits(username)
+	except:
+		userlist = []
+		userlist.append(username)
+		pickle.dump(userlist, open("users.p", "wb"))
 
 def saveReddits(username):
 	subreddits = []
@@ -35,7 +36,7 @@ def saveReddits(username):
 		writer = csv.writer(stream)
 		writer.writerow(subreddits)
 
-	print("Done")	
+	print("Done.")	
 
 
 username = usr
