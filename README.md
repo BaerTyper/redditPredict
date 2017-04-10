@@ -9,6 +9,7 @@ What it does so far:
 - Check if Reddit account has been checked already before doing anything with it
 
 For the future:
+- Compare Subreddit lists before adding new user to them
 - Look for users on the front page automatically
 - Save Subreddit lists of users automatically
 - Actually accept user input and look for subreddits the user may like
