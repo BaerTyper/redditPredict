@@ -1,5 +1,4 @@
 import praw
-import csv
 import pickle
 
 usr = ""
@@ -7,6 +6,10 @@ pwd = ""
 id = ""
 secret = ""
 agent = ""
+
+def automatic():
+	for submission in reddit.front.hot(limit=5):
+    	print(submission.score)
 
 def checkRedditor(username): # Saves username in "users.p" file, then calls saveReddits
 	try:
