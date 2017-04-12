@@ -10,8 +10,13 @@ What it does so far:
 
 For the future:
 - Compare Subreddit lists before adding new user to them
-- Look for users on the front page automatically
+- Look for users on random subreddits
 - Save Subreddit lists of users automatically
 - Actually accept user input and look for subreddits the user may like
 
 Still have lots of work to do on this, and sadly not a lot of time. But I enjoy doing it. And I really want to see how well it works in the end. 
+
+
+
+**main.py** will be the file run to input a username and receive a list of subreddits the user may like. 
+**redditPredict** will be the file run to collect more subreddit-data-samples from users of random subreddits
